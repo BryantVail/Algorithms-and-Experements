@@ -1,14 +1,14 @@
 //algorithm
 function NumeralToOctet(numeral) {
-  //instance variables
-  let currentDivider = 128;
-  let binaryString = [];
-  let remainder = numeral;
-
   //verify valid argument
   if (remainder > 255) {
     return "value is not able to be turned into an octet";
   }
+
+  //instance variables
+  let currentDivider = 128;
+  let binaryString = [];
+  let remainder = numeral;
 
   //while( binaryString is not an octet)
   while (binaryString.length < 8) {
